@@ -207,7 +207,6 @@
 				A5BE883228FD512000EA1E34 /* Frameworks */,
 				A5BE883328FD512000EA1E34 /* Resources */,
 				7FC95FD1402D04C6E8377388 /* [CP] Embed Pods Frameworks */,
-				A56BCED828FD5BFE00183C71 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -280,23 +279,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-avitoTestTask/Pods-avitoTestTask-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		A56BCED828FD5BFE00183C71 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\n  exit 1\nfi\n";
 		};
 		A80E1689A0465D152D95E762 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
