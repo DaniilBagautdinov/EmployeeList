@@ -45,10 +45,8 @@ class EmployeesViewController: UIViewController {
     
     private func configureView() {
         viewModel.getEmoloyees()
-        
         view.backgroundColor = .white
-        title = constants.companyName
-        
+
         addViews()
         configureTableView()
         configureErrorView()
@@ -142,6 +140,9 @@ class EmployeesViewController: UIViewController {
     private func reloadTableView() {
         DispatchQueue.main.async { [weak self] in
             self?.tableView.reloadData()
+            
+            guard let companyName = self?.constants.companyName else { return }
+            self?.title = UserDefaults.standard.string(forKey: companyName)
         }
     }
     

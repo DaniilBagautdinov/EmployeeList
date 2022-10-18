@@ -10,7 +10,7 @@ class Constants {
     
     let errorTitle: String = "Faild to connect"
     
-    let companyName: String = UserDefaults.standard.string(forKey: "companyName") ?? ""
+    let companyName: String = "companyName"
     
     let cellReuseIdentifier: String = "cell"
     
